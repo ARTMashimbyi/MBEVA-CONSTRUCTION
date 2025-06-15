@@ -372,6 +372,6 @@ footer img {
 
 /* Ensure footer logo is properly sized */
 footer .flex img {
-  width: 100px;
-  height: 70px;
+  width: 300px;
+  height: 120px;
 }
