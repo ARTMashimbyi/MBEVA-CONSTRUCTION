@@ -355,3 +355,23 @@ a {
   background-color: var(--orange-600);
   transform: translateY(-3px);
 }
+
+
+/* Logo Styles */
+.nav-logo img,
+footer img {
+  width: 40px; /* Fixed width */
+  height: 40px; /* Fixed height */
+  object-fit: contain; /* Ensures the image maintains aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover img {
+  transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Ensure footer logo is properly sized */
+footer .flex img {
+  width: 100px;
+  height: 70px;
+}
