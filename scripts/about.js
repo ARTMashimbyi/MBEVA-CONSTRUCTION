@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="space-y-6">
             <h3 class="text-2xl md:text-3xl font-bold">Our Story</h3>
             <p>
-              MBEVA CONSTRUCTION was founded in 2019 by a visionary with over 12 years of hands-on experience in South Africa's construction industry. Born out of a passion for transformative development and community upliftment, we are more than just a construction company—we are a catalyst for change. Headquartered in Johannesburg and operating nationally, we bridge the gap between world-class construction practices and grassroots empowerment.
+              MBEVA CONSTRUCTION was founded in 2019 by a visionary with over 12 years of hands-on experience in South Africa's construction industry. Born out of a passion for transformative development and community upliftment, we are more than just a construction company, we are a catalyst for change. Headquartered in Johannesburg and operating nationally, we bridge the gap between world-class construction practices and grassroots empowerment.
             </p>
             <p>
-              Our journey is rooted in addressing two critical needs: delivering exceptional construction services while actively participating in South Africa's Economic Empowerment programs. We prioritize skills transfer to historically disadvantaged communities, ensuring that every project leaves a legacy of knowledge and opportunity. By partnering with technical colleges, government agencies, and private stakeholders, we've created a model where construction excellence and social impact go hand in hand.
+              Our journey is rooted in addressing two critical needs: delivering exceptional construction services while actively participating in South Africa's Economic Empowerment programs. We prioritize skills transfer to historically disadvantaged communities, ensuring that every project leaves a legacy of knowledge and opportunity.
             </p>
             <p>
-              What sets us apart is our adaptive approach. We combine traditional craftsmanship with modern techniques, staying ahead of industry trends to deliver projects on time and within budget—without compromising quality. From humble beginnings to managing multi-million-rand developments, our story reflects resilience, innovation, and an unwavering commitment to building South Africa's future, one brick at a time.
+              What sets us apart is our adaptive approach. We combine traditional craftsmanship with modern techniques, staying ahead of industry trends to deliver projects on time and within budget without compromising quality. From humble our story reflects resilience, innovation, and an unwavering commitment to building South Africa's future, one brick at a time.
             </p>
           </div>
           
@@ -69,6 +69,8 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
 
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+
         <div class="grid md:grid-cols-2 gap-8">
           <div class="bg-blue-900 text-white p-8 rounded-lg">
             <i data-lucide="eye" class="h-12 w-12 text-orange-500 mb-4"></i>
@@ -83,18 +85,18 @@ document.addEventListener('DOMContentLoaded', function() {
               <li>Our name symbolizes excellence across all project scales</li>
             </ul>
             <p class="mt-4">
-              By 2030, we aim to expand our footprint across SADC, leveraging our Johannesburg base to deliver pan-African infrastructure solutions.
+              By 2040, we aim to expand our footprint across SADC, leveraging our Johannesburg base to deliver pan-African infrastructure solutions.
             </p>
           </div>
+           
           
           <div class="bg-orange-500 text-white p-8 rounded-lg">
             <i data-lucide="target" class="h-12 w-12 text-white mb-4"></i>
             <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
-            <p class="mb-4">MBEVA CONSTRUCTION exists to:</p>
-            <ul class="space-y-2 list-disc pl-5">
+            <p class="mb-4">MBEVA CONSTRUCTION exists to become a market leader while being committed to meeting customer's needs through high-quality, cost-effective, and technical management solutions.</p>
+            <ul class="space-y-2 list-disc pl-4">
               <li><strong>Deliver Unmatched Quality:</strong> Use premium materials and enforce strict NHBRC compliance</li>
               <li><strong>Champion Affordability:</strong> Optimize supply chains to reduce client costs</li>
-              <li><strong>Drive Social Impact:</strong> Allocate 15% of profits to community training centers</li>
               <li><strong>Innovate Constantly:</strong> Invest in BIM and green construction tech</li>
               <li><strong>Build Relationships:</strong> Provide 5-year warranties on structural work</li>
             </ul>
@@ -104,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
       </div>
+       </div>
     </section>
   `;
   

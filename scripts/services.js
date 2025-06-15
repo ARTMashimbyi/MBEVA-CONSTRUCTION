@@ -17,19 +17,19 @@ document.addEventListener('DOMContentLoaded', function() {
     {
       icon: "droplets",
       title: "Professional Plumbing",
-      description: "Full-spectrum plumbing services including:<br>• Pipe installation & repairs<br>• Bathroom & kitchen plumbing<br>• Geyser installations<br>• Drainage systems<br>• Water-efficient solutions",
+      description: "Full-spectrum plumbing services including:<br>• Pipe installation & repairs<br>• Bathroom & kitchen plumbing<br>• Drainage systems<br>• Water-efficient solutions",
       gallery: "plumbing-gallery"
     },
     {
       icon: "zap",
       title: "Electrical Installations",
-      description: "Certified electrical services covering:<br>• Wiring & rewiring<br>• DB board installations<br>• Lighting solutions<br>• Safety inspections<br>• Energy-efficient upgrades",
+      description: "Certified electrical services covering:<br>• Wiring & rewiring<br>• DB board installations<br>• Lighting solutions<br>• Energy-efficient upgrades",
       gallery: "electrical-gallery"
     },
     {
       icon: "square",
       title: "Partitioning Solutions",
-      description: "Specialized drywall and office partitioning services including:<br>• Gypsum board partitions<br>• Glass office dividers<br>• Soundproof installations<br>• Modular partitioning systems<br>• Bulkhead constructions",
+      description: "Specialized drywall and office partitioning services including:<br>• Gypsum board partitions<br>• Glass office dividers<br>• Soundproof installations<br>• Modular partitioning systems",
       gallery: "partitioning-gallery"
     },
     {
@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   servicesContainer.innerHTML = `
     <section id="services" class="py-12 bg-gray-50">
+     
       <div class="container mx-auto px-4">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Construction Services</h2>
