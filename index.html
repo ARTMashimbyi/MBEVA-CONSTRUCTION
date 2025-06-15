@@ -771,18 +771,18 @@
   </main>
 
   <!-- Footer -->
-  <footer id="footer" class="bg-blue-900 text-white py-12">
+  <footer class="bg-black text-white py-12">
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-4 gap-8">
         <div>
           <div class="flex items-center gap-2 mb-4">
-            <img src="images/logo2.png" alt="MBEVA Construction Logo" class="h-10 w-10 object-contain">
-            
+            <img src="images/logo2.png" alt="MBEVA Construction Logo" class="h-10 w-10">
+           
           </div>
-          <p class="mb-4 text-blue-200">
+          <p class="mb-4 opacity-90">
             Leading construction company in South Africa, committed to excellence and empowerment since 2019.
           </p>
-          <p class="text-sm text-blue-300">
+          <p class="text-sm opacity-75">
             Company Registration: 2019/011938/07
           </p>
         </div>
@@ -790,59 +790,64 @@
         <div>
           <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
           <ul class="space-y-2">
-            <li><a href="#about" class="text-blue-200 hover:text-orange-400 transition-colors">About Us</a></li>
-            <li><a href="#services" class="text-blue-200 hover:text-orange-400 transition-colors">Services</a></li>
-            <li><a href="#experience" class="text-blue-200 hover:text-orange-400 transition-colors">Projects</a></li>
-            <li><a href="#contact" class="text-blue-200 hover:text-orange-400 transition-colors">Contact</a></li>
+            <li><a href="#about" class="opacity-90 hover:opacity-100 hover:text-blue-300 transition-colors">About Us</a></li>
+            <li><a href="#services" class="opacity-90 hover:opacity-100 hover:text-blue-300 transition-colors">Services</a></li>
+            <li><a href="#experience" class="opacity-90 hover:opacity-100 hover:text-blue-300 transition-colors">Projects</a></li>
+            <li><a href="#contact" class="opacity-90 hover:opacity-100 hover:text-blue-300 transition-colors">Contact</a></li>
           </ul>
         </div>
         
         <div>
           <h4 class="text-lg font-semibold mb-4">Services</h4>
           <ul class="space-y-2">
-            <li><a href="#services" class="text-blue-200 hover:text-orange-400 transition-colors">Construction</a></li>
-            <li><a href="#services" class="text-blue-200 hover:text-orange-400 transition-colors">Renovations</a></li>
-            <li><a href="#services" class="text-blue-200 hover:text-orange-400 transition-colors">Plumbing</a></li>
-            <li><a href="#services" class="text-blue-200 hover:text-orange-400 transition-colors">Electrical</a></li>
+            <li><a href="#services" class="opacity-90 hover:opacity-100 hover:text-blue-300 transition-colors">Construction</a></li>
+            <li><a href="#services" class="opacity-90 hover:opacity-100 hover:text-blue-300 transition-colors">Renovations</a></li>
+            <li><a href="#services" class="opacity-90 hover:opacity-100 hover:text-blue-300 transition-colors">Plumbing</a></li>
+            <li><a href="#services" class="opacity-90 hover:opacity-100 hover:text-blue-300 transition-colors">Electrical</a></li>
           </ul>
         </div>
         
         <div>
           <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
-          <div class="space-y-3 text-blue-200">
+          <div class="space-y-3 opacity-90">
             <div class="flex items-center gap-2">
-              <i data-lucide="phone" class="h-4 w-4 text-orange-400"></i>
+              <i data-lucide="phone" class="h-4 w-4 text-blue-300"></i>
               <span>076-198-7496</span>
             </div>
             <div class="flex items-center gap-2">
-              <i data-lucide="mail" class="h-4 w-4 text-orange-400"></i>
+              <i data-lucide="mail" class="h-4 w-4 text-blue-300"></i>
               <span class="text-sm">luckymash580@gmail.com</span>
             </div>
             <div class="flex items-center gap-2">
-              <i data-lucide="map-pin" class="h-4 w-4 text-orange-400"></i>
+              <i data-lucide="map-pin" class="h-4 w-4 text-blue-300"></i>
               <span>Johannesburg, South Africa</span>
             </div>
           </div>
           
           <div class="mt-6 flex gap-4">
-            <a href="#" class="text-blue-200 hover:text-orange-400 transition-colors">
+            <a href="#" class="opacity-90 hover:opacity-100 hover:text-blue-300 transition-colors">
               <i data-lucide="facebook" class="h-6 w-6"></i>
             </a>
-            <a href="#" class="text-blue-200 hover:text-orange-400 transition-colors">
+            <a href="#" class="opacity-90 hover:opacity-100 hover:text-blue-300 transition-colors">
               <i data-lucide="linkedin" class="h-6 w-6"></i>
             </a>
-            <a href="#" class="text-blue-200 hover:text-orange-400 transition-colors">
+            <a href="#" class="opacity-90 hover:opacity-100 hover:text-blue-300 transition-colors">
               <i data-lucide="instagram" class="h-6 w-6"></i>
             </a>
           </div>
         </div>
       </div>
       
-      <div class="border-t border-blue-800 mt-8 pt-8 text-center text-blue-300">
-        <p>&copy; 2023 MBEVA CONSTRUCTION. All rights reserved.</p>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center opacity-75">
+        <p>&copy; <span id="current-year"></span> MBEVA CONSTRUCTION. All rights reserved.</p>
       </div>
     </div>
   </footer>
+  
+  <script>
+    // Add current year automatically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="scripts/main.js"></script>
