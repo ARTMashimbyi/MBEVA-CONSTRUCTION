@@ -418,3 +418,52 @@ footer .text-gray-500 {
 footer i {
   color: #93c5fd !important; /* Light blue icons */
 }
+
+
+/* Gallery Modal Styles */
+#gallery-modal {
+  transition: opacity 0.3s ease;
+}
+
+#gallery-modal img {
+  transition: transform 0.3s ease;
+}
+
+#gallery-modal img:hover {
+  transform: scale(1.02);
+}
+
+#thumbnails::-webkit-scrollbar {
+  height: 5px;
+}
+
+#thumbnails::-webkit-scrollbar-track {
+  background: #333;
+}
+
+#thumbnails::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 5px;
+}
+
+#thumbnails::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+
+
+
+/* Gallery Page Styles */
+#image-grid img {
+  transition: transform 0.3s ease;
+}
+
+#image-grid img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 640px) {
+  #image-grid {
+    grid-template-columns: 1fr;
+  }
+}
