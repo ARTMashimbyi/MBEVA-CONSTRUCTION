@@ -698,3 +698,70 @@ footer i {
   align-items: center;
   justify-content: center;
 }
+/* Force bluish background behind tiles */
+#experience .grid > div {
+  position: relative;
+  z-index: 1;
+}
+
+#experience .grid > div::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background: rgba(30, 144, 255, 0.2);
+  z-index: -1;
+  border-radius: 12px;
+  filter: blur(10px);
+}
+
+/* Force Turnkey Construction Solutions */
+.bg-gradient-to-r.from-blue-900.to-blue-800 {
+  background: var(--orange-500) !important;
+}
+
+.bg-gradient-to-r.from-blue-900.to-blue-800 * {
+  color: var(--blue-900) !important;
+}
+
+/* Force buttons */
+#experience .btn,
+#experience .btn-primary,
+#experience .bg-blue-600 {
+  background-color: var(--blue-900) !important;
+  color: var(--orange-500) !important;
+  border: 2px solid var(--orange-500) !important;
+}
+
+#experience .btn:hover,
+#experience .btn-primary:hover,
+#experience .bg-blue-600:hover {
+  background-color: var(--blue-700) !important;
+  color: var(--orange-300) !important;
+}
+
+/* Force dark blue text in the "Ready to Start Your Project?" section */
+#experience .bg-blue-900.text-white.p-8.rounded-lg.text-center h3,
+#experience .bg-blue-900.text-white.p-8.rounded-lg.text-center p {
+  color: var(--blue-900) !important;
+}
+
+/* Force orange background for this section */
+#experience .bg-blue-900.text-white.p-8.rounded-lg.text-center {
+  background-color: var(--orange-500) !important;
+}
+
+/* Force dark blue text for the button */
+#experience .bg-blue-900.text-white.p-8.rounded-lg.text-center .btn-primary {
+  color: var(--orange-600) !important;
+  background-color: rgb(16, 0, 157) !important;
+  border: 2px solid var(--white-900) !important;
+}
+
+#experience
+  .bg-blue-900.text-white.p-8.rounded-lg.text-center
+  .btn-primary:hover {
+  background-color: var(--blue-100) !important;
+}
