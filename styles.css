@@ -792,3 +792,138 @@ footer i {
   .btn-primary:hover {
   background-color: var(--blue-100) !important;
 }
+
+/* Mobile Header Scaling */
+@media (max-width: 768px) {
+  header#header nav {
+    padding: 0.5rem 0;
+  }
+
+  .nav-logo img {
+    height: 32px;
+    width: 32px;
+  }
+
+  .nav-logo-text {
+    font-size: 1rem;
+  }
+
+  #mobile-menu-button {
+    padding: 0.5rem;
+  }
+
+  #mobile-menu {
+    padding: 1rem;
+  }
+
+  #mobile-menu a {
+    padding: 0.75rem 0;
+  }
+}
+
+/* Add space between Commercial Clients and Ready to Start section */
+#experience > .container > div:last-child {
+  margin-top: 3rem;
+}
+
+/* Force Request a Quote button styles */
+#experience .bg-blue-900.text-white.p-8.rounded-lg.text-center .btn-primary {
+  background-color: var(--blue-900) !important;
+  color: var(--orange-500) !important;
+  border: 2px solid var(--orange-500) !important;
+}
+
+#experience
+  .bg-blue-900.text-white.p-8.rounded-lg.text-center
+  .btn-primary:hover {
+  background-color: #4caf50 !important; /* Green */
+  color: black !important;
+}
+
+/* Force View Gallery button styles */
+a[href*="gallery"] {
+  background-color: var(--orange-500) !important;
+  color: var(--blue-900) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.25rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  transition: all 0.3s ease !important;
+}
+
+a[href*="gallery"]:hover {
+  background-color: #4caf50 !important; /* Green */
+  color: black !important;
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 640px) {
+  /* Hero section adjustments */
+  #hero .hero-content h1 {
+    font-size: 2.25rem;
+  }
+
+  #hero .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  #hero .grid.grid-cols-2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Service cards adjustments */
+  #services .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Experience section adjustments */
+  #experience .grid.md\:grid-cols-2,
+  #experience .grid.lg\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact form adjustments */
+  #contact .grid.lg\:grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Make sure all buttons have consistent hover states */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure footer is mobile-friendly */
+@media (max-width: 768px) {
+  footer .grid.md\:grid-cols-4 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  footer .flex img {
+    width: 200px;
+    height: auto;
+  }
+}
+
+/* Force Request a Quote button in Turnkey Construction Solutions */
+.bg-gradient-to-r.from-blue-900.to-blue-800 .bg-blue-600 {
+  background-color: var(--blue-900) !important;
+  color: var(--orange-500) !important;
+  border: 2px solid white !important;
+  width: 150px;
+  height: 50px;
+}
+
+.bg-gradient-to-r.from-blue-900.to-blue-800 .bg-blue-600:hover {
+  background-color: #4caf50 !important; /* Green */
+  color: black !important;
+  border-color: black !important;
+}
+
+/* Make sure the text stays visible on hover */
+.bg-gradient-to-r.from-blue-900.to-blue-800 .bg-blue-600:hover span {
+  color: black !important;
+}
