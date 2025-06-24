@@ -698,3 +698,28 @@ footer i {
   align-items: center;
   justify-content: center;
 }
+/* Force ALL elements in Experience section to dark blue background with orange text */
+#experience .bg-white,
+#experience .bg-white.p-6,
+#experience .bg-white.rounded-lg,
+#experience .bg-white.shadow-lg,
+#experience .bg-white.p-6.rounded-lg.shadow-lg,
+#experience .bg-white.p-6.rounded-lg.shadow-lg:hover,
+#experience .bg-white.p-6.rounded-lg.shadow-lg.border-t-4.border-orange-500,
+#experience .bg-white.p-6.rounded-lg.shadow-lg.border-t-4.border-blue-500 {
+  background-color: var(--blue-900) !important;
+  color: var(--orange-500) !important;
+  border-color: var(--orange-500) !important;
+}
+
+/* Force ALL text in Experience section */
+#experience * {
+  color: var(--orange-500) !important;
+}
+
+/* Force borders in Experience section */
+#experience .border,
+#experience .border-t,
+#experience .border-blue-100 {
+  border-color: var(--orange-500) !important;
+}
