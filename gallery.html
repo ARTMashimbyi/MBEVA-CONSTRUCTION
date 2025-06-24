@@ -1,159 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MBEVA CONSTRUCTION - Gallery</title>
-  <link href="https://unpkg.com/lucide@latest/dist/lucide.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- Header from index.html -->
-  <header id="header">
-    <nav class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-md">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MBEVA CONSTRUCTION - Gallery</title>
+    <link
+      href="https://unpkg.com/lucide@latest/dist/lucide.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header from index.html -->
+    <header id="header">
+      <nav
+        class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-md"
+      >
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center py-4">
+            <a href="index.html" class="nav-logo flex items-center gap-3">
+              <img
+                src="images/logo.png"
+                alt="MBEVA Construction Logo"
+                class="h-10 w-10 object-contain"
+              />
+              <span
+                class="nav-logo-text text-xl font-bold text-blue-900 hidden md:block"
+                >MBEVA CONSTRUCTION</span
+              >
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+              <a
+                href="index.html#home"
+                class="text-blue-900 hover:text-orange-500 transition-colors font-medium"
+                >Home</a
+              >
+              <a
+                href="index.html#about"
+                class="text-blue-900 hover:text-orange-500 transition-colors font-medium"
+                >About</a
+              >
+              <a
+                href="index.html#services"
+                class="text-blue-900 hover:text-orange-500 transition-colors font-medium"
+                >Services</a
+              >
+              <a
+                href="index.html#experience"
+                class="text-blue-900 hover:text-orange-500 transition-colors font-medium"
+                >Projects</a
+              >
+              <a href="index.html#contact" class="btn btn-primary px-6"
+                >Contact Us</a
+              >
+            </div>
+
+            <button
+              id="mobile-menu-button"
+              class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            >
+              <i data-lucide="menu" class="h-6 w-6 text-blue-900"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-24">
+      <!-- Added padding for fixed header -->
+      <div class="container mx-auto px-4 py-8">
+        <!-- Back Button -->
+        <a
+          href="index.html"
+          class="inline-flex items-center gap-2 mb-8 text-blue-900 hover:text-orange-500 transition-colors"
+        >
+          <i data-lucide="arrow-left" class="h-5 w-5"></i>
+          <span>Back to Services</span>
+        </a>
+
+        <!-- Gallery Content -->
+        <h1
+          id="gallery-title"
+          class="text-3xl md:text-4xl font-bold mb-8 text-blue-900"
+        ></h1>
+
+        <div
+          id="image-grid"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <!-- Images will be inserted here by JavaScript -->
+        </div>
+
+        <div id="empty-gallery" class="hidden text-center py-12">
+          <i
+            data-lucide="camera-off"
+            class="h-16 w-16 mx-auto text-gray-400 mb-4"
+          ></i>
+          <h2 class="text-2xl font-semibold text-gray-600">Coming Soon</h2>
+          <p class="text-gray-500 mt-2">
+            We're currently working on adding photos for this service.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer from index.html -->
+    <footer class="bg-black text-white py-12">
       <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center py-4">
-          <a href="index.html" class="nav-logo flex items-center gap-3">
-            <img src="images/logo.png" alt="MBEVA Construction Logo" class="h-10 w-10 object-contain">
-            <span class="nav-logo-text text-xl font-bold text-blue-900 hidden md:block">MBEVA CONSTRUCTION</span>
-          </a>
-          
-          <div class="hidden md:flex items-center gap-8">
-            <a href="index.html#home" class="text-blue-900 hover:text-orange-500 transition-colors font-medium">Home</a>
-            <a href="index.html#about" class="text-blue-900 hover:text-orange-500 transition-colors font-medium">About</a>
-            <a href="index.html#services" class="text-blue-900 hover:text-orange-500 transition-colors font-medium">Services</a>
-            <a href="index.html#experience" class="text-blue-900 hover:text-orange-500 transition-colors font-medium">Projects</a>
-            <a href="index.html#contact" class="btn btn-primary px-6">Contact Us</a>
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <img
+                src="images/logo-white.png"
+                alt="MBEVA Construction Logo"
+                class="h-10 w-10 object-contain"
+              />
+              <h3 class="text-xl font-bold">MBEVA CONSTRUCTION</h3>
+            </div>
+            <p class="mb-4 opacity-90">
+              Leading construction company in South Africa, committed to
+              excellence and empowerment since 2019.
+            </p>
+            <p class="text-sm opacity-75">
+              Company Registration: 2019/011938/07
+            </p>
           </div>
-          
-          <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors">
-            <i data-lucide="menu" class="h-6 w-6 text-blue-900"></i>
-          </button>
+
+          <!-- Footer columns (same as index.html) -->
+          ...
         </div>
-      </div>
-    </nav>
-  </header>
 
-  <main class="pt-24"> <!-- Added padding for fixed header -->
-    <div class="container mx-auto px-4 py-8">
-      <!-- Back Button -->
-      <a href="index.html" class="inline-flex items-center gap-2 mb-8 text-blue-900 hover:text-orange-500 transition-colors">
-        <i data-lucide="arrow-left" class="h-5 w-5"></i>
-        <span>Back to Services</span>
-      </a>
-
-      <!-- Gallery Content -->
-      <h1 id="gallery-title" class="text-3xl md:text-4xl font-bold mb-8 text-blue-900"></h1>
-      
-      <div id="image-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Images will be inserted here by JavaScript -->
-      </div>
-      
-      <div id="empty-gallery" class="hidden text-center py-12">
-        <i data-lucide="camera-off" class="h-16 w-16 mx-auto text-gray-400 mb-4"></i>
-        <h2 class="text-2xl font-semibold text-gray-600">Coming Soon</h2>
-        <p class="text-gray-500 mt-2">We're currently working on adding photos for this service.</p>
-      </div>
-    </div>
-  </main>
-
-  <!-- Footer from index.html -->
-  <footer class="bg-black text-white py-12">
-    <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-8">
-        <div>
-          <div class="flex items-center gap-2 mb-4">
-            <img src="images/logo-white.png" alt="MBEVA Construction Logo" class="h-10 w-10 object-contain">
-            <h3 class="text-xl font-bold">MBEVA CONSTRUCTION</h3>
-          </div>
-          <p class="mb-4 opacity-90">
-            Leading construction company in South Africa, committed to excellence and empowerment since 2019.
-          </p>
-          <p class="text-sm opacity-75">
-            Company Registration: 2019/011938/07
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center opacity-75">
+          <p>
+            &copy; <span id="current-year"></span> MBEVA CONSTRUCTION. All
+            rights reserved.
           </p>
         </div>
-        
-        <!-- Footer columns (same as index.html) -->
-        ...
       </div>
-      
-      <div class="border-t border-gray-800 mt-8 pt-8 text-center opacity-75">
-        <p>&copy; <span id="current-year"></span> MBEVA CONSTRUCTION. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Get service name from URL
-      const urlParams = new URLSearchParams(window.location.search);
-      const service = urlParams.get('service');
-      
-      if (!service) {
-        window.location.href = 'index.html';
-        return;
-      }
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get service name from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const service = urlParams.get("service");
 
-      // Service configuration
-      const services = {
-        'general-construction': {
-          name: 'General Construction',
-          images: [
-            'images/logo.png',
-          'images/logo.png',
-          'images/logo2.png'
-          ]
-        },
-        'renovations': {
-          name: 'Renovations',
-          images: [
-            'images/gallery/renovations/image1.jpg',
-            'images/gallery/renovations/image2.jpg'
-          ]
-        },
-        // Add other services following the same pattern
-      };
+        if (!service) {
+          window.location.href = "index.html";
+          return;
+        }
 
-      const currentService = services[service];
-      if (!currentService) {
-        window.location.href = 'index.html';
-        return;
-      }
+        // Service configuration
+        const services = {
+          "general-construction": {
+            name: "General Construction",
+            images: ["images/logo.png", "images/logo.png", "images/logo2.png"],
+          },
+          renovations: {
+            name: "Renovations",
+            images: [
+              "images/gallery/renovations/image1.jpg",
+              "images/gallery/renovations/image2.jpg",
+            ],
+          },
+          // Add other services following the same pattern
+        };
 
-      // Set page title
-      document.getElementById('gallery-title').textContent = `${currentService.name} Gallery`;
+        const currentService = services[service];
+        if (!currentService) {
+          window.location.href = "index.html";
+          return;
+        }
 
-      // Load images
-      const imageGrid = document.getElementById('image-grid');
-      const emptyGallery = document.getElementById('empty-gallery');
-      
-      if (currentService.images.length > 0) {
-        currentService.images.forEach(imgPath => {
-          const imgContainer = document.createElement('div');
-          imgContainer.className = 'overflow-hidden rounded-lg shadow-md bg-white';
-          
-          const img = document.createElement('img');
-          img.src = imgPath;
-          img.alt = `${currentService.name} project`;
-          img.className = 'w-full h-64 object-contain';
-          img.loading = 'lazy';
-          
-          imgContainer.appendChild(img);
-          imageGrid.appendChild(imgContainer);
-        });
-      } else {
-        imageGrid.classList.add('hidden');
-        emptyGallery.classList.remove('hidden');
-      }
+        // Set page title
+        document.getElementById(
+          "gallery-title"
+        ).textContent = `${currentService.name} Gallery`;
 
-      // Initialize icons
-      lucide.createIcons();
-      
-      // Set current year
-      document.getElementById('current-year').textContent = new Date().getFullYear();
-    });
-  </script>
-</body>
+        // Load images
+        const imageGrid = document.getElementById("image-grid");
+        const emptyGallery = document.getElementById("empty-gallery");
+
+        if (currentService.images.length > 0) {
+          currentService.images.forEach((imgPath) => {
+            const imgContainer = document.createElement("div");
+            imgContainer.className =
+              "overflow-hidden rounded-lg shadow-md bg-white";
+
+            const img = document.createElement("img");
+            img.src = imgPath;
+            img.alt = `${currentService.name} project`;
+            img.className = "w-full h-64 object-contain";
+            img.loading = "lazy";
+
+            imgContainer.appendChild(img);
+            imageGrid.appendChild(imgContainer);
+          });
+        } else {
+          imageGrid.classList.add("hidden");
+          emptyGallery.classList.remove("hidden");
+        }
+
+        // Initialize icons
+        lucide.createIcons();
+
+        // Set current year
+        document.getElementById("current-year").textContent =
+          new Date().getFullYear();
+      });
+    </script>
+  </body>
 </html>
