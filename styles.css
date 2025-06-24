@@ -1,4 +1,130 @@
-/* Base Styles */
+/* Updated Button Styles */
+.btn-primary {
+  background-color: var(--orange-500);
+  color: var(--blue-900); /* Dark blue text */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #010181;
+  color: var(--orange-500);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline {
+  border: 2px solid var(--blue-700);
+  color: rgb(0, 0, 0);
+  background-color: #00ff11;
+}
+
+.btn-outline:hover {
+  background-color: #010181;
+  color: #00ff11;
+  border-color: #00ff11;
+}
+
+/* View Gallery Button */
+a[href*="gallery"] {
+  color: var(--orange-500) !important;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+a[href*="gallery"]:hover {
+  color: var(--blue-900) !important;
+  background-color: var(--blue-300); /* Light blue on hover */
+}
+
+/* Why Choose Us? Section */
+.bg-white.p-8.rounded-lg.shadow-lg.border.border-blue-100 {
+  background-color: var(--orange-500) !important;
+  color: var(--blue-900) !important;
+}
+
+.bg-white.p-8.rounded-lg.shadow-lg.border.border-blue-100 h4,
+.bg-white.p-8.rounded-lg.shadow-lg.border.border-blue-100 h5,
+.bg-white.p-8.rounded-lg.shadow-lg.border.border-blue-100 p {
+  color: var(--blue-900) !important;
+}
+
+/* Our Vision Section */
+.bg-blue-900.text-white.p-8.rounded-lg {
+  background-color: var(--orange-500) !important;
+  color: var(--blue-900) !important;
+}
+
+.bg-blue-900.text-white.p-8.rounded-lg h3,
+.bg-blue-900.text-white.p-8.rounded-lg p,
+.bg-blue-900.text-white.p-8.rounded-lg li {
+  color: var(--blue-900) !important;
+}
+
+/* Our Mission Section */
+.bg-orange-500.text-white.p-8.rounded-lg {
+  background-color: var(--blue-900) !important;
+  color: var(--orange-500) !important;
+}
+
+.bg-orange-500.text-white.p-8.rounded-lg h3,
+.bg-orange-500.text-white.p-8.rounded-lg p,
+.bg-orange-500.text-white.p-8.rounded-lg li,
+.bg-orange-500.text-white.p-8.rounded-lg strong {
+  color: var(--orange-500) !important;
+}
+
+/* Service Cards */
+.bg-blue-900.text-white.p-6.rounded-lg {
+  background-color: var(--blue-900) !important;
+  color: var(--orange-500) !important;
+}
+
+.bg-blue-900.text-white.p-6.rounded-lg h3,
+.bg-blue-900.text-white.p-6.rounded-lg div {
+  color: var(--orange-500) !important;
+}
+
+.bg-blue-900.text-white.p-6.rounded-lg .text-blue-100 {
+  color: var(--orange-200) !important;
+}
+
+/* Contact Form Button */
+button[type="submit"] {
+  background-color: var(--orange-500) !important;
+  color: var(--blue-900) !important;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--blue-300) !important;
+}
+
+/* Gallery Modal Buttons */
+#prev-btn,
+#next-btn {
+  background-color: var(--orange-500) !important;
+  color: var(--blue-900) !important;
+}
+
+#prev-btn:hover,
+#next-btn:hover {
+  background-color: var(--blue-300) !important;
+}
+
+/* Footer Button */
+footer .btn-primary {
+  background-color: var(--orange-500) !important;
+  color: var(--blue-900) !important;
+}
+
+footer .btn-primary:hover {
+  background-color: var(--blue-300) !important;
+}
+
+/* Keep the rest of your existing CSS below */
 :root {
   --primary: #1e40af; /* blue-800 */
   --secondary: #1e3a8a; /* blue-900 */
@@ -11,7 +137,7 @@
   --stone-200: #e7e5e4;
   --stone-300: #d6d3d1;
   --stone-800: #292524;
-  
+
   --blue-50: #eff6ff;
   --blue-100: #dbeafe;
   --blue-200: #bfdbfe;
@@ -22,7 +148,7 @@
   --blue-700: #1d4ed8;
   --blue-800: #1e40af;
   --blue-900: #1e3a8a;
-  
+
   --orange-50: #fff7ed;
   --orange-100: #ffedd5;
   --orange-200: #fed7aa;
@@ -33,10 +159,10 @@
   --orange-700: #c2410c;
   --orange-800: #9a3412;
   --orange-900: #7c2d12;
-  
+
   --amber-100: #fef3c7;
   --amber-200: #fde68a;
-  
+
   --slate-100: #f1f5f9;
   --slate-200: #e2e8f0;
   --slate-300: #cbd5e1;
@@ -71,7 +197,7 @@ nav {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.6;
   color: var(--text);
   background-color: white;
@@ -96,17 +222,29 @@ section {
   z-index: 20; /* Higher than hero overlay */
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.2;
   color: var(--dark);
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.25rem; }
-h3 { font-size: 1.875rem; }
-h4 { font-size: 1.5rem; }
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.25rem;
+}
+h3 {
+  font-size: 1.875rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
 
 p {
   margin-bottom: 1rem;
@@ -127,70 +265,115 @@ a {
   transition: all 0.3s ease;
 }
 
-.btn-primary {
-  background-color: var(--accent);
-  color: white;
-}
-
-.btn-primary:hover {
-  background-color: var(--orange-600);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn-outline {
-  border: 2px solid white;
-  color: white;
-}
-
-.btn-outline:hover {
-  background-color: white;
-  color: var(--blue-900);
-}
-
 .text-center {
   text-align: center;
 }
 
 /* Utility Classes */
-.mb-4 { margin-bottom: 1rem; }
-.mb-6 { margin-bottom: 1.5rem; }
-.mb-8 { margin-bottom: 2rem; }
-.mb-12 { margin-bottom: 3rem; }
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
+}
+.mb-12 {
+  margin-bottom: 3rem;
+}
 
-.py-8 { padding-top: 2rem; padding-bottom: 2rem; }
-.py-12 { padding-top: 3rem; padding-bottom: 3rem; }
-.py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
 
-.px-4 { padding-left: 1rem; padding-right: 1rem; }
-.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 
-.bg-light { background-color: var(--light); }
-.bg-dark { background-color: var(--dark); color: white; }
-.bg-primary { background-color: var(--primary); color: white; }
-.bg-accent { background-color: var(--accent); color: white; }
+.bg-light {
+  background-color: var(--light);
+}
+.bg-dark {
+  background-color: var(--dark);
+  color: white;
+}
+.bg-primary {
+  background-color: var(--primary);
+  color: white;
+}
+.bg-accent {
+  background-color: var(--accent);
+  color: white;
+}
 
-.rounded-lg { border-radius: 0.5rem; }
-.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
 
-.grid { display: grid; }
-.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.grid {
+  display: grid;
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 
-.gap-6 { gap: 1.5rem; }
-.gap-8 { gap: 2rem; }
-.gap-12 { gap: 3rem; }
+.gap-6 {
+  gap: 1.5rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.gap-12 {
+  gap: 3rem;
+}
 
-.flex { display: flex; }
-.items-center { align-items: center; }
-.justify-center { justify-content: center; }
-.justify-between { justify-content: space-between; }
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
@@ -199,13 +382,23 @@ a {
 
 /* New Animations */
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
 }
 
 .float-animate {
@@ -259,7 +452,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('images/construction-bg.jpg');
+  background-image: url("images/construction-bg.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.3;
@@ -272,7 +465,11 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(65, 116, 255, 0.9), rgba(67, 66, 66, 0.075));
+  background: linear-gradient(
+    to right,
+    rgba(65, 116, 255, 0.9),
+    rgba(67, 66, 66, 0.075)
+  );
   z-index: 1;
 }
 
@@ -280,7 +477,6 @@ a {
   position: relative;
   z-index: 2;
 }
-
 
 /* Section Dividers */
 .section-divider {
@@ -304,14 +500,24 @@ a {
 
 /* Responsive */
 @media (min-width: 768px) {
-  .md\:flex { display: flex; }
-  .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .md\:flex {
+    display: flex;
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 /* Mobile Menu */
@@ -356,7 +562,6 @@ a {
   transform: translateY(-3px);
 }
 
-
 /* Logo Styles */
 .nav-logo img,
 footer img {
@@ -376,8 +581,6 @@ footer .flex img {
   height: 120px;
 }
 
-
-
 /* Footer Styles */
 footer {
   background-color: #000000 !important; /* Pure black */
@@ -396,7 +599,7 @@ footer a:hover {
   opacity: 1;
 }
 
-footer h3, 
+footer h3,
 footer h4 {
   color: #ffffff !important;
 }
@@ -418,7 +621,6 @@ footer .text-gray-500 {
 footer i {
   color: #93c5fd !important; /* Light blue icons */
 }
-
 
 /* Gallery Modal Styles */
 #gallery-modal {
@@ -450,9 +652,6 @@ footer i {
   background: #777;
 }
 
-
-
-
 /* Gallery Page Styles */
 #image-grid img {
   transition: transform 0.3s ease;
@@ -467,9 +666,6 @@ footer i {
     grid-template-columns: 1fr;
   }
 }
-
-
-
 
 /* Gallery Page Specific Styles */
 #image-grid img {
