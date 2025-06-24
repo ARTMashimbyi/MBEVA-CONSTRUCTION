@@ -8,19 +8,20 @@
       href="https://unpkg.com/lucide@latest/dist/lucide.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="gallery.css" />
   </head>
   <body>
-    <!-- Header from index.html -->
+    <!-- Header from ../index.html -->
     <header id="header">
       <nav
         class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-md"
       >
         <div class="container mx-auto px-4">
           <div class="flex justify-between items-center py-4">
-            <a href="index.html" class="nav-logo flex items-center gap-3">
+            <a href="../index.html" class="nav-logo flex items-center gap-3">
               <img
-                src="images/logo.png"
+                src="../images/logo.png"
                 alt="MBEVA Construction Logo"
                 class="h-10 w-10 object-contain"
               />
@@ -32,26 +33,26 @@
 
             <div class="hidden md:flex items-center gap-8">
               <a
-                href="index.html#home"
+                href="../index.html#home"
                 class="text-blue-900 hover:text-orange-500 transition-colors font-medium"
                 >Home</a
               >
               <a
-                href="index.html#about"
+                href="../index.html#about"
                 class="text-blue-900 hover:text-orange-500 transition-colors font-medium"
                 >About</a
               >
               <a
-                href="index.html#services"
+                href="../index.html#services"
                 class="text-blue-900 hover:text-orange-500 transition-colors font-medium"
                 >Services</a
               >
               <a
-                href="index.html#experience"
+                href="../index.html#experience"
                 class="text-blue-900 hover:text-orange-500 transition-colors font-medium"
                 >Projects</a
               >
-              <a href="index.html#contact" class="btn btn-primary px-6"
+              <a href="../index.html#contact" class="btn btn-primary px-6"
                 >Contact Us</a
               >
             </div>
@@ -68,18 +69,16 @@
     </header>
 
     <main class="pt-24">
-      <!-- Added padding for fixed header -->
-      <div class="container mx-auto px-4 py-8">
-        <!-- Back Button -->
-        <a
-          href="index.html"
-          class="inline-flex items-center gap-2 mb-8 text-blue-900 hover:text-orange-500 transition-colors"
-        >
+      <!-- Back Button Container -->
+      <div class="back-button-container container mx-auto px-4">
+        <a href="../index.html#services" class="back-button">
           <i data-lucide="arrow-left" class="h-5 w-5"></i>
           <span>Back to Services</span>
         </a>
+      </div>
 
-        <!-- Gallery Content -->
+      <!-- Gallery Content -->
+      <div class="container mx-auto px-4 py-8">
         <h1
           id="gallery-title"
           class="text-3xl md:text-4xl font-bold mb-8 text-blue-900"
@@ -105,14 +104,14 @@
       </div>
     </main>
 
-    <!-- Footer from index.html -->
+    <!-- Footer from ../index.html -->
     <footer class="bg-black text-white py-12">
       <div class="container mx-auto px-4">
         <div class="grid md:grid-cols-4 gap-8">
           <div>
             <div class="flex items-center gap-2 mb-4">
               <img
-                src="images/logo-white.png"
+                src="../images/logo2.png"
                 alt="MBEVA Construction Logo"
                 class="h-10 w-10 object-contain"
               />
@@ -127,8 +126,7 @@
             </p>
           </div>
 
-          <!-- Footer columns (same as index.html) -->
-          ...
+          <!-- Footer columns (same as ../index.html) -->
         </div>
 
         <div class="border-t border-gray-800 mt-8 pt-8 text-center opacity-75">
@@ -148,7 +146,7 @@
         const service = urlParams.get("service");
 
         if (!service) {
-          window.location.href = "index.html";
+          window.location.href = "../index.html";
           return;
         }
 
@@ -158,19 +156,51 @@
             name: "General Construction",
             images: ["images/logo.png", "images/logo.png", "images/logo2.png"],
           },
-          renovations: {
-            name: "Renovations",
-            images: [
-              "images/gallery/renovations/image1.jpg",
-              "images/gallery/renovations/image2.jpg",
-            ],
+          Upgrades: {
+            name: "Renovations & Upgrades",
+            images: ["images/logo.png", "images/logo.png", "images/logo2.png"], // Empty array to test "Coming Soon" message
           },
-          // Add other services following the same pattern
+          Plumbing: {
+            name: "Plumbing",
+            images: [], // Empty array to test "Coming Soon" message
+          },
+          Renovations: {
+            name: "Renovations",
+            images: [], // Empty array to test "Coming Soon" message
+          },
+          Renovations: {
+            name: "Renovations",
+            images: [], // Empty array to test "Coming Soon" message
+          },
+          Renovations: {
+            name: "Renovations",
+            images: [], // Empty array to test "Coming Soon" message
+          },
+          Renovations: {
+            name: "Renovations",
+            images: [], // Empty array to test "Coming Soon" message
+          },
+          Renovations: {
+            name: "Renovations",
+            images: [], // Empty array to test "Coming Soon" message
+          },
+          Renovations: {
+            name: "Renovations",
+            images: [], // Empty array to test "Coming Soon" message
+          },
+          Renovations: {
+            name: "Renovations",
+            images: [], // Empty array to test "Coming Soon" message
+          },
+          Renovations: {
+            name: "Renovations",
+            images: [], // Empty array to test "Coming Soon" message
+          },
         };
 
         const currentService = services[service];
         if (!currentService) {
-          window.location.href = "index.html";
+          window.location.href = "../index.html";
           return;
         }
 
@@ -183,16 +213,16 @@
         const imageGrid = document.getElementById("image-grid");
         const emptyGallery = document.getElementById("empty-gallery");
 
-        if (currentService.images.length > 0) {
+        if (currentService.images && currentService.images.length > 0) {
           currentService.images.forEach((imgPath) => {
             const imgContainer = document.createElement("div");
             imgContainer.className =
-              "overflow-hidden rounded-lg shadow-md bg-white";
+              "gallery-item overflow-hidden rounded-lg shadow-md bg-white";
 
             const img = document.createElement("img");
             img.src = imgPath;
             img.alt = `${currentService.name} project`;
-            img.className = "w-full h-64 object-contain";
+            img.className = "w-full h-64 object-cover";
             img.loading = "lazy";
 
             imgContainer.appendChild(img);
